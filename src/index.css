@@ -1,6 +1,10 @@
+@font-face { font-family: Quicksand; font-weight: normal; src: url('./assets/Quicksand-Regular.ttf'); }
+@font-face { font-family: Quicksand; font-weight: bold; src: url('./assets/Quicksand-Bold.ttf'); }
+@font-face { font-family: Quicksand; font-weight: lighter; src: url('./assets/Quicksand-Light.ttf'); }
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +14,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
 }

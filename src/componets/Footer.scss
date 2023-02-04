@@ -1,0 +1,121 @@
+.Footer {
+  position: relative;
+  width: 100vw;
+  background-color: rgb(34, 37, 41);
+  display: flex;
+  flex-direction: column;
+
+  .name {
+    color: rgb(194, 172, 171);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+
+  .title {
+    color: rgb(194, 172, 171);
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .social a {
+    color: white;
+    fill: white;
+    text-decoration: none;
+    border-radius: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff33;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .social a:hover {
+    background-color: white;
+    color: rgb(194, 172, 171);
+    fill: rgb(194, 172, 171);
+  }
+
+  .social svg {
+    fill: inherit;
+    width: 16px;
+    height: 16px;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: #ffffff1a;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 40px 0px 40px 0px;
+    gap: 40px;
+    color: white;
+  }
+
+  .address p {
+    margin-bottom: 10px;
+  }
+
+  .address > div {
+    max-width: 300px;
+  }
+
+  .address .locale {
+    text-transform: uppercase;
+    color: rgb(194, 172, 171);
+    font-weight: bold;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #686968;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .address {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+}

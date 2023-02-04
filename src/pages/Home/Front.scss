@@ -1,0 +1,43 @@
+.Front {
+  width: 100vw;
+  height: 100vw;
+  background-image: url('../../assets/wallpaperflare.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .title {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+}

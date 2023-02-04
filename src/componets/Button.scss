@@ -1,0 +1,38 @@
+a.Button {
+  color: black;
+  border: 2px solid rgb(194, 172, 171);
+  padding: 18px 35px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1rem;
+  transition: background-color 100ms linear;
+  width: 100%;
+  max-width: 300px;
+
+  &:hover {
+    color: white;
+    background-color: rgb(194, 172, 171);
+    transition: background-color 100ms linear;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+}
