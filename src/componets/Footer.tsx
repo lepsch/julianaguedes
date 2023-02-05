@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 import { ReactComponent as Instagram } from '../assets/Instagram.svg'
 import { ReactComponent as Facebook } from '../assets/Facebook.svg'
 import { ReactComponent as Whatsapp } from '../assets/Whatsapp.svg'
-import './Footer.scss';
+import './Footer.scss'
 
-function Footer() {
+function Footer () {
   return <div className='Footer'>
     <p className='name'>Juliana Guedes</p>
     <p className='title'>Medicina Estética</p>

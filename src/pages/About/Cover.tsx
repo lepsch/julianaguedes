@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import './Cover.scss';
+import './Cover.scss'
 
-function Cover() {
+function Cover () {
   return <div className='Cover'>
     <div className='title'>
       <p>Paixão pela Medicina Estética</p>
@@ -10,4 +10,4 @@ function Cover() {
   </div>
 }
 
-export default Cover;
+export default Cover

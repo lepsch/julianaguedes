@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import './Front.scss';
+import './Front.scss'
 
-function Front() {
+function Front () {
   return <div className='Front'>
     <div className='title'>
       <p>Juliana Guedes</p>
@@ -11,4 +11,4 @@ function Front() {
   </div>
 }
 
-export default Front;
+export default Front

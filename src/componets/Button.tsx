@@ -4,7 +4,7 @@ import './Button.scss'
 
 export enum ButtonTheme {
   light = 'light',
-  dark = 'dark'
+  dark = 'dark',
 }
 
 const Button: React.FC<{
@@ -12,7 +12,7 @@ const Button: React.FC<{
   theme?: ButtonTheme
 }> = ({
   children,
-  theme = ButtonTheme.light
+  theme = ButtonTheme.light,
 }) => {
   return <a className={ classnames('Button', theme) } href='#'>
     { children }

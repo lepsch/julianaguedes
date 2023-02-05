@@ -5,7 +5,7 @@ import photo from '../../assets/photo.jpg'
 import Button from '../../componets/Button'
 import './SelfDisplay.scss'
 
-function SelfDisplay() {
+function SelfDisplay () {
   const parallax = useParallax<HTMLImageElement>({
     speed: 10,
   })
@@ -22,7 +22,7 @@ function SelfDisplay() {
       </div>
     </div>
     <div className='photo'>
-      <img ref={ parallax.ref } src={ photo } alt='Foto da Dra. Juliana Guedes' />
+      <img alt='Foto da Dra. Juliana Guedes' ref={ parallax.ref } src={ photo } />
     </div>
   </div>
 }

@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 import { ReactComponent as Instagram } from '../assets/Instagram.svg'
-import './Social.scss';
+import './Social.scss'
 
-function Social() {
+function Social () {
   return <div className='Social'>
     <Instagram />
     <p>@drajulianaguedes</p>
   </div>
 }
 
-export default Social;
+export default Social

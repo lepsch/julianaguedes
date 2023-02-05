@@ -7,7 +7,7 @@ import Social from '../../componets/Social'
 import Schedule from '../../componets/Schedule'
 import './index.scss'
 
-function About() {
+function About () {
   return <main className='About'>
     <Menu />
     <Cover />

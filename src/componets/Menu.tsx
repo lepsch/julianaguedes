@@ -4,9 +4,9 @@ import classnames from 'classnames'
 
 import { ReactComponent as Bars } from '../assets/bars-solid.svg'
 import { ReactComponent as Xmark } from '../assets/xmark-solid.svg'
-import './Menu.scss';
+import './Menu.scss'
 
-function Menu() {
+function Menu () {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return <div className='Menu'>
@@ -18,10 +18,10 @@ function Menu() {
         }}><Bars /></button>
       </div>
       <div className={classnames('icon', { hidden: !menuOpen })}>
-      <button onClick={(e) => {
-        setMenuOpen(false)
-        e.stopPropagation()
-      }}><Xmark /></button>
+        <button onClick={(e) => {
+          setMenuOpen(false)
+          e.stopPropagation()
+        }}><Xmark /></button>
       </div>
     </div>
     <ul className={classnames('menu-content', { open: menuOpen })}>

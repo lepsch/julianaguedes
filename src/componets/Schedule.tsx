@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Button, { ButtonTheme } from './Button';
-import physicianDesk from '../assets/physician-desk.jpg';
-import './Schedule.scss';
+import Button, { ButtonTheme } from './Button'
+import physicianDesk from '../assets/physician-desk.jpg'
+import './Schedule.scss'
 
-function Schedule() {
+function Schedule () {
   return <div className='Schedule'>
     <div className='text'>
       <p>Chegou a hora de realçar ainda mais a beleza que já existe em você!</p>
@@ -14,4 +14,4 @@ function Schedule() {
   </div>
 }
 
-export default Schedule;
+export default Schedule

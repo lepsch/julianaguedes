@@ -8,7 +8,7 @@ import Social from '../../componets/Social'
 import Schedule from '../../componets/Schedule'
 import './index.scss'
 
-function Home() {
+function Home () {
   return <main className='Home'>
     <Menu />
     <Front />

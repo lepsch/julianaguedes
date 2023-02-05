@@ -12,26 +12,26 @@ import './index.css'
 import About from './pages/About'
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById('root') as HTMLElement,
 )
 
 const router = createBrowserRouter([
   {
-    path: '/',
     element: <Home />,
+    path: '/',
   },
   {
-    path: '/sobre',
     element: <About />,
+    path: '/sobre',
   },
-]);
+])
 
 root.render(
   <React.StrictMode>
     <ParallaxProvider>
       <RouterProvider router={ router } />
     </ParallaxProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 )
 
 // If you want to start measuring performance in your app, pass a function
