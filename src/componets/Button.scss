@@ -1,6 +1,6 @@
 a.Button {
   color: black;
-  border: 2px solid rgb(194, 172, 171);
+  border: 2px solid var(--theme-color);
   padding: 18px 35px;
   text-align: center;
   text-decoration: none;
@@ -16,7 +16,7 @@ a.Button {
 
   &:hover {
     color: white;
-    background-color: rgb(194, 172, 171);
+    background-color: var(--theme-color);
     transition: background-color 100ms linear;
   }
 
