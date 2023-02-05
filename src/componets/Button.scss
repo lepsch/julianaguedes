@@ -10,6 +10,10 @@ a.Button {
   width: 100%;
   max-width: 300px;
 
+  &.dark {
+    color: white;
+  }
+
   &:hover {
     color: white;
     background-color: rgb(194, 172, 171);
