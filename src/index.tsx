@@ -8,8 +8,9 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Home from './pages/Home'
 import reportWebVitals from './reportWebVitals'
-import './index.css'
 import About from './pages/About'
+import Contact from './pages/Contact'
+import './index.css'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     element: <About />,
     path: '/sobre',
+  },
+  {
+    element: <Contact />,
+    path: '/contacto',
   },
 ])
 
