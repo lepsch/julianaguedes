@@ -5,6 +5,7 @@ import Footer from '../../componets/Footer'
 import Front from './Front'
 import SelfDisplay from './SelfDisplay'
 import Social from '../../componets/Social'
+import Schedule from '../../componets/Schedule'
 import './index.scss'
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
     <Front />
     <SelfDisplay />
     <Social />
+    <Schedule />
     <Footer />
   </main>
 }
