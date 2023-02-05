@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import classnames from 'classnames'
 
 import { ReactComponent as Bars } from '../assets/bars-solid.svg'
@@ -24,11 +25,11 @@ function Menu() {
       </div>
     </div>
     <ul className={classnames('menu-content', { open: menuOpen })}>
-      <li className='menu-item'><a href='#'>Início</a></li>
-      <li className='menu-item'><a href='#'>Sobre</a></li>
-      <li className='menu-item'><a href='#'>Contacto</a></li>
+      <li className='menu-item'><Link to='/'>Início</Link></li>
+      <li className='menu-item'><Link to='/sobre'>Sobre</Link></li>
+      <li className='menu-item'><Link to='/contacto'>Contacto</Link></li>
     </ul>
   </div>
 }
 
-export default Menu;
+export default Menu
