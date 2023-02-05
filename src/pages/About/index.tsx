@@ -2,7 +2,7 @@ import React from 'react'
 
 import Menu from '../../componets/Menu'
 import Footer from '../../componets/Footer'
-import Front from '../../componets/Front'
+import Cover from './Cover'
 import Social from '../../componets/Social'
 import Schedule from '../../componets/Schedule'
 import './index.scss'
@@ -10,7 +10,7 @@ import './index.scss'
 function About() {
   return <main className='About'>
     <Menu />
-    <Front />
+    <Cover />
 
     <Social />
     <Schedule />
