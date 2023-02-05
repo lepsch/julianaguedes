@@ -1,9 +1,9 @@
 import React from 'react'
 
-import './Front.scss'
+import './Cover.scss'
 
-function Front () {
-  return <div className='Front'>
+function Cover () {
+  return <div className='Cover'>
     <div className='title'>
       <p>Juliana Guedes</p>
       <p className='sub-title'>Medicina Estética</p>
@@ -11,4 +11,4 @@ function Front () {
   </div>
 }
 
-export default Front
+export default Cover
