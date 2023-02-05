@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import classnames from 'classnames'
 
@@ -8,6 +8,15 @@ import './Menu.scss'
 
 function Menu () {
   const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const closeMenu = () => { setMenuOpen(false) }
+
+    document.addEventListener('click', closeMenu)
+    return () => {
+      document.removeEventListener('click', closeMenu)
+    }
+  })
 
   return <div className='Menu'>
     <div className='menu-mobile-icon'>
