@@ -5,6 +5,7 @@ import Footer from '../../componets/Footer'
 import Cover from './Cover'
 import Social from '../../componets/Social'
 import Schedule from '../../componets/Schedule'
+import WorkPlaces from '../../componets/WorkPlaces'
 import './index.scss'
 
 function About () {
@@ -12,6 +13,7 @@ function About () {
     <Menu />
     <Cover />
 
+    <WorkPlaces />
     <Social />
     <Schedule />
     <Footer />

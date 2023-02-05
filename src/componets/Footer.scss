@@ -56,35 +56,26 @@
     height: 16px;
   }
 
-  .address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .Address {
     border-style: solid;
     border-width: 1px 0px 1px 0px;
     border-color: #ffffff1a;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 40px 0px 40px 0px;
-    gap: 40px;
     color: white;
   }
 
-  .address p {
-    margin-bottom: 10px;
-  }
+  // .address p {
+  //   margin-bottom: 10px;
+  // }
 
-  .address > div {
-    max-width: 300px;
-  }
+  // .address > div {
+  //   max-width: 300px;
+  // }
 
-  .address .locale {
-    text-transform: uppercase;
-    color: var(--theme-color);
-    font-weight: bold;
-  }
+  // .address .locale {
+  //   text-transform: uppercase;
+  //   color: var(--theme-color);
+  //   font-weight: bold;
+  // }
 
   .copyright {
     display: flex;
@@ -103,10 +94,10 @@
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .address {
-      flex-direction: row;
-      align-items: baseline;
-    }
+    // .address {
+    //   flex-direction: row;
+    //   align-items: baseline;
+    // }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */

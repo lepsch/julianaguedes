@@ -1,4 +1,28 @@
-.About {
+.Address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 40px 0px 40px 0px;
+  gap: 40px;
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  > div {
+    max-width: 300px;
+  }
+
+  .locale {
+    text-transform: uppercase;
+    color: var(--theme-color);
+    font-weight: bold;
+  }
+
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
 
@@ -6,7 +30,8 @@
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-
+    flex-direction: row;
+    align-items: baseline;
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
