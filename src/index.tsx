@@ -12,10 +12,6 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import './index.css'
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
-)
-
 const router = createBrowserRouter([
   {
     element: <Home />,
@@ -31,13 +27,21 @@ const router = createBrowserRouter([
   },
 ])
 
-root.render(
-  <React.StrictMode>
-    <ParallaxProvider>
-      <RouterProvider router={ router } />
-    </ParallaxProvider>
-  </React.StrictMode>,
-)
+const rootElement = document.getElementById('root') as HTMLElement
+
+const app = <ParallaxProvider>
+  <RouterProvider router={ router } />
+</ParallaxProvider>
+
+if (rootElement?.hasChildNodes()) {
+  ReactDOM.hydrateRoot(rootElement, app)
+} else {
+  const root = ReactDOM.createRoot(rootElement)
+  root.render(
+    <React.StrictMode>
+      { app }
+    </React.StrictMode>)
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
