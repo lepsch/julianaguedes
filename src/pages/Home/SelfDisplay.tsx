@@ -13,7 +13,7 @@ function SelfDisplay () {
   return <div className='SelfDisplay'>
     <div className='info'>
       <div className='container'>
-        <p className='name'>Dra. Juliana Guedes</p>
+        <h2 className='name'>Dra. Juliana Guedes</h2>
         <p>Medicina Estética - CRM 123456</p>
         <p>Procedimentos - Tecnologias - Beleza - Ciência - Saúde - Estética - Lifestyle</p>
         <Button>

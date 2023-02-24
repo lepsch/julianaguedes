@@ -2,13 +2,13 @@
   width: 100vw;
   height: 100vw;
   background-image: url('../../assets/wallpaperflare.jpg');
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right;
 
-  .title {
-    font-size: 50px;
-    color: white;
-    text-transform: uppercase;
+  .title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,8 +16,18 @@
     height: 100%;
   }
 
+  .title {
+    font-size: 50px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+  }
+
   .sub-title {
     font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */

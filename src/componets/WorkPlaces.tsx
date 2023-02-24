@@ -2,12 +2,12 @@ import React from 'react'
 
 import Address from './Address'
 import bambuse from '../assets/bambuse.jpg'
-import senhoraABranca from '../assets/senhora-a-branca.png'
+import senhoraABranca from '../assets/senhora-a-branca.jpg'
 import './WorkPlaces.scss'
 
 function WorkPlaces () {
   return <div className='WorkPlaces'>
-    <p className='title'>Locais de atendimento</p>
+    <h2 className='title'>Locais de atendimento</h2>
     <div className='address-container'>
       <Address
         first={ <img alt='Clínica Senhora a Branca' src={ senhoraABranca } /> }

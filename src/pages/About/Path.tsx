@@ -4,9 +4,7 @@ import './Path.scss'
 
 function Path () {
   return <div className='Path'>
-    <div className='title'>
-      <p>Carreira</p>
-    </div>
+    <h2 className='title'>Carreira</h2>
     <div className='text-container'>
       <div className='text'>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
