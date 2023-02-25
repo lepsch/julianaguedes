@@ -2,6 +2,7 @@
   /* --theme-color: rgb(194, 172, 171); */
   --theme-color: rgb(170, 80, 80);
   /* --theme-color: rgb(190, 170, 0); */
+  /* --theme-color: #FF9999; */
 }
 
 @font-face { font-family: Quicksand; font-weight: normal; src: url('./assets/Quicksand-Regular.ttf'); }
