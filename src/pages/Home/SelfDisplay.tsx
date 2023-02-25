@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParallax } from 'react-scroll-parallax'
 
-import photo from '../../assets/photo.jpg'
+import photo from '../../assets/dra-juliana-guedes-photo.jpg'
 import Button from '../../componets/Button'
 import './SelfDisplay.scss'
 

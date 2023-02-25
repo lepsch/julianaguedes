@@ -7,13 +7,13 @@ import Social from '../../componets/Social'
 import Schedule from '../../componets/Schedule'
 import Cover from './Cover'
 import Section from './Section'
-import botox from '../../assets/botox.jpg'
-import acidohialuronico from '../../assets/acido-hialuronico.jpg'
-import fios from '../../assets/fios-de-pdo.jpg'
-import bioestimuladores from '../../assets/bioestimuladores-de-colageno.jpg'
-import pronokal from '../../assets/pronokal.jpg'
-import peeling from '../../assets/peeling-quimico.jpg'
-import microagulhamento from '../../assets/dermapen-microagulhamento.jpg'
+import botox from '../../assets/dra-juliana-guedes-botox.jpg'
+import acidohialuronico from '../../assets/dra-juliana-guedes-acido-hialuronico.jpg'
+import fios from '../../assets/dra-juliana-guedes-fios-de-pdo.jpg'
+import bioestimuladores from '../../assets/dra-juliana-guedes-bioestimuladores-de-colageno.jpg'
+import pronokal from '../../assets/dra-juliana-guedes-pronokal.jpg'
+import peeling from '../../assets/dra-juliana-guedes-peeling-quimico.jpg'
+import microagulhamento from '../../assets/dra-juliana-guedes-dermapen-microagulhamento.jpg'
 import './index.scss'
 
 function Home () {
@@ -22,6 +22,7 @@ function Home () {
     <Cover />
     <SelfDisplay />
     <Section
+      alt='Foto de um paciente com o procedimento de Botox antes e depois'
       name='Toxina Botulínica'
       photo={ botox }
       reverse
@@ -33,6 +34,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
+      alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurônico'
       name='Ácido Hialurônico'
       photo={ acidohialuronico }
       text='O Ácido Hialurônico é um procedimento estético que atua na diminuição das rugas e linhas de expressão, além de amenizar a flacidez da pele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
@@ -43,7 +45,8 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
-      name='Fios Tensores'
+      alt='Foto de uma paciente com o procedimento de Fios de PDO aplicados na face pela Dra. Juliana Guedes'
+      name='Fios de PDO'
       photo={ fios }
       reverse
       text='Os Fios são um procedimento estético que atua na diminuição das rugas e linhas de expressão, além de amenizar a flacidez da pele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
@@ -54,6 +57,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
+      alt='Foto da Dra. Juliana Guedes com os Bioestimuladores de Colágeno'
       name='Bioestimu&#8203;ladores de Colágeno'
       photo={ bioestimuladores }
       text='Os Bioestimuladores de Colágeno são um procedimento estético que atua na diminuição das rugas e linhas de expressão, além de amenizar a flacidez da pele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
@@ -64,6 +68,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
+    alt='Foto da Dra. Juliana Guedes com ficha do PronoKal®'
       name='PronoKal®'
       photo={ pronokal }
       reverse
@@ -75,6 +80,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
+      alt='Foto de uma paciente com o procedimento de Peeling Químico'
       name='Peeling Químico'
       photo={ peeling }
       text='O Peeling é um procedimento estético que atua na diminuição das rugas e linhas de expressão, além de amenizar a flacidez da pele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
@@ -85,6 +91,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
+      alt='Foto de uma paciente com o procedimento de Microagulhamento'
       name='Microneedling'
       photo={ microagulhamento }
       reverse

@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Address from './Address'
-import bambuse from '../assets/bambuse.jpg'
-import senhoraABranca from '../assets/senhora-a-branca.jpg'
+import bambuse from '../assets/clinica-bambuse.jpg'
+import senhoraABranca from '../assets/dra-juliana-guedes-senhora-a-branca.jpg'
 import './WorkPlaces.scss'
 
 function WorkPlaces () {
@@ -11,7 +11,7 @@ function WorkPlaces () {
     <div className='address-container'>
       <Address
         first={ <img alt='Clínica Senhora a Branca' src={ senhoraABranca } /> }
-        second={ <img alt='Bambuse' src={ bambuse } /> }
+        second={ <img alt='Clínica Bambuse' src={ bambuse } /> }
       />
     </div>
   </div>

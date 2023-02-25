@@ -4,7 +4,19 @@ import classNames from 'classnames'
 
 import './Section.scss'
 
-function Section ({ name, photo, reverse, text }: { name: string, photo: string, reverse?: boolean, text: string }) {
+function Section ({
+  alt,
+  name,
+  photo,
+  reverse,
+  text,
+}: {
+  alt: string
+  name: string
+  photo: string
+  reverse?: boolean
+  text: string
+}) {
   return <div className={classNames('Section', { reverse: !!reverse })}>
     <div className='info'>
       <div className='container'>
@@ -16,7 +28,7 @@ function Section ({ name, photo, reverse, text }: { name: string, photo: string,
       </div>
     </div>
     <div className='photo'>
-      <img alt='Foto da Dra. Juliana Guedes' src={ photo } />
+      <img alt={ alt } src={ photo } />
     </div>
   </div>
 }
