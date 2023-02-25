@@ -6,7 +6,7 @@ import './Social.scss'
 function Social () {
   return <div className='Social'>
     <Instagram />
-    <p>@drajulianaguedes</p>
+    <a href='https://www.instagram.com/drajulianaguedes/' rel="noreferrer" target="_blank">@drajulianaguedes</a>
   </div>
 }
 

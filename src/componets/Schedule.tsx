@@ -8,7 +8,7 @@ function Schedule () {
   return <div className='Schedule'>
     <div className='text'>
       <p>Chegou a hora de realçar ainda mais a beleza que já existe em você!</p>
-      <Button theme={ ButtonTheme.dark }>Agende sua consulta</Button>
+      <Button href='/contacto' theme={ ButtonTheme.dark }>Agende sua consulta</Button>
     </div>
     <img src={ physicianDesk } />
   </div>

@@ -27,7 +27,8 @@
     fill: var(--theme-color)
   }
 
-  p {
+  a {
+    text-decoration: none;
     color: white;
     font-size: 40px;
   }
@@ -35,7 +36,7 @@
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
     height: 35vh;
-    p {
+    a {
       font-size: 50px;
     }
   }
@@ -48,7 +49,7 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     height: 60vh;
-    p {
+    a {
       letter-spacing: 1rem;
     }
   }

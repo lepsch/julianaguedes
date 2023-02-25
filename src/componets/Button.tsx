@@ -9,12 +9,14 @@ export enum ButtonTheme {
 
 const Button: React.FC<{
   children?: React.ReactNode | undefined
+  href: string
   theme?: ButtonTheme
 }> = ({
   children,
+  href,
   theme = ButtonTheme.light,
 }) => {
-  return <a className={ classnames('Button', theme) } href='#'>
+  return <a className={ classnames('Button', theme) } href={ href }>
     { children }
   </a>
 }

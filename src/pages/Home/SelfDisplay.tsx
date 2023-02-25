@@ -14,9 +14,9 @@ function SelfDisplay () {
     <div className='info'>
       <div className='container'>
         <h2 className='name'>Dra. Juliana Guedes</h2>
-        <p>Medicina Estética - CRM 123456</p>
+        <p>Medicina Estética - OM 70651</p>
         <p>Procedimentos - Tecnologias - Beleza - Ciência - Saúde - Estética - Lifestyle</p>
-        <Button>
+        <Button href='/sobre'>
           Conheça a Doutora
         </Button>
       </div>
