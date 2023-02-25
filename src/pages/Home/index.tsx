@@ -54,7 +54,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
-      name='Bioestimuladores de Colágeno'
+      name='Bioestimu&#8203;ladores de Colágeno'
       photo={ bioestimuladores }
       text='Os Bioestimuladores de Colágeno são um procedimento estético que atua na diminuição das rugas e linhas de expressão, além de amenizar a flacidez da pele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
         sed. Quisque pharetra dui nisi. Sed scelerisque dui vel massa ornare condimentum. Praesent vestibulum enim
@@ -85,7 +85,7 @@ function Home () {
         maximus nisl consequat laoreet.'
     />
     <Section
-      name='Microagulhamento'
+      name='Microneedling'
       photo={ microagulhamento }
       reverse
       text='O Microagulhamento é um procedimento estético que atua na diminuição das rugas e linhas de expressão, além de amenizar a flacidez da pele. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla erat erat, ut congue purus congue
