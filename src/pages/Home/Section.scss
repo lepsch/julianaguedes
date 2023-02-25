@@ -4,9 +4,10 @@
 
 
   .info .name {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: normal;
     color: var(--theme-color);
+    word-break: break-word;
   }
 
   .info .container {
