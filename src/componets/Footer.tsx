@@ -11,9 +11,9 @@ function Footer () {
     <p className='name'>Juliana Guedes</p>
     <p className='title'>Medicina Estética</p>
     <div className='social'>
-      <a href='#'><Instagram /></a>
-      <a href='#'><Facebook /></a>
-      <a href='#'><Whatsapp /></a>
+      <a href='https://www.instagram.com/drajulianaguedes/' rel="noreferrer" target="_blank"><Instagram /></a>
+      <a href='https://www.facebook.com/drajulianaguedes/' rel="noreferrer" target="_blank"><Facebook /></a>
+      <a href='https://wa.me/351910160557' rel="noreferrer" target="_blank"><Whatsapp /></a>
     </div>
     <Address />
     <div className='copyright'>
