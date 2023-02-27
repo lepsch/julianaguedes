@@ -14,6 +14,8 @@ function Path () {
         <p>Pós-graduada em Endocrinologia e Metabologia com Título de Especialista pela Sociedade Brasileira de
           Endocrinologia e Metabologia (SBEM)</p>
 
+        <p>Pós-graduada em Nutrologia - ABRAN</p>
+
         <p>Mestrado Integrado em Medicina pela Universidade de Lisboa.</p>
 
         <p>Pós-graduada em Medicina Estética pela Universidad de Alcalá de Henares - ES</p>
