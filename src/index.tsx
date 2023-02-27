@@ -5,12 +5,13 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import CookieConsent from 'react-cookie-consent'
 
 import Home from './pages/Home'
 import reportWebVitals from './reportWebVitals'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import './index.css'
+import './index.scss'
 
 const router = createBrowserRouter([
   {
@@ -29,17 +30,30 @@ const router = createBrowserRouter([
 
 const rootElement = document.getElementById('root') as HTMLElement
 
-const app = <ParallaxProvider>
-  <RouterProvider router={ router } />
-</ParallaxProvider>
+const App = () => {
+  return <ParallaxProvider>
+    <CookieConsent
+      buttonClasses='cookie-consent-button'
+      buttonText='Concordo'
+      buttonWrapperClasses='cookie-consent-button-wrapper'
+      containerClasses='cookie-consent'
+      contentClasses='cookie-consent-content'
+      disableStyles
+    >
+      Este sítio usa cookies para fornecer alguns recursos básicos. Ao continuar
+      a navegar no sítio você concorda com o uso de cookies.
+    </CookieConsent>
+    <RouterProvider router={ router } />
+  </ParallaxProvider>
+}
 
 if (rootElement?.hasChildNodes()) {
-  ReactDOM.hydrateRoot(rootElement, app)
+  ReactDOM.hydrateRoot(rootElement, <App />)
 } else {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <React.StrictMode>
-      { app }
+      <App />
     </React.StrictMode>)
 }
 
