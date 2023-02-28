@@ -30,30 +30,34 @@ const router = createBrowserRouter([
 
 const rootElement = document.getElementById('root') as HTMLElement
 
-const App = () => {
-  return <ParallaxProvider>
-    <CookieConsent
-      buttonClasses='cookie-consent-button'
-      buttonText='Concordo'
-      buttonWrapperClasses='cookie-consent-button-wrapper'
-      containerClasses='cookie-consent'
-      contentClasses='cookie-consent-content'
-      disableStyles
-    >
-      Este sítio usa cookies para fornecer alguns recursos básicos. Ao continuar
-      a navegar no sítio você concorda com o uso de cookies.
-    </CookieConsent>
-    <RouterProvider router={ router } />
-  </ParallaxProvider>
+const CookieConsentSSR = () => {
+  if (navigator.userAgent === 'ReactSnap') return null
+
+  return <CookieConsent
+    buttonClasses='cookie-consent-button'
+    buttonText='Concordo'
+    buttonWrapperClasses='cookie-consent-button-wrapper'
+    containerClasses='cookie-consent'
+    contentClasses='cookie-consent-content'
+    disableStyles
+  >
+    Este sítio usa cookies para fornecer alguns recursos básicos. Ao continuar
+    a navegar no sítio você concorda com o uso de cookies.
+  </CookieConsent>
 }
 
+const app = <ParallaxProvider>
+  <CookieConsentSSR />
+  <RouterProvider router={ router } />
+</ParallaxProvider>
+
 if (rootElement?.hasChildNodes()) {
-  ReactDOM.hydrateRoot(rootElement, <App />)
+  ReactDOM.hydrateRoot(rootElement, app)
 } else {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <React.StrictMode>
-      <App />
+      { app }
     </React.StrictMode>)
 }
 

@@ -85,8 +85,7 @@ function Home () {
         pele, atenuar marcas e reduzir rugas, tornando a pele mais lisa, luminosa e com aspeto jovial.
 
         Ideal para tratamento de discromias (lêntigos, manchas, melasma, olheiras pigmentadas), acne ativa e cicatrizes
-        de acne, poros dilatados e reduzir rugas superficiais e profundas.
-      '
+        de acne, poros dilatados e reduzir rugas superficiais e profundas.'
     />
     <Section
       alt='Foto de uma paciente com o procedimento de Microagulhamento'
@@ -102,8 +101,7 @@ function Home () {
         dilatados, clarear manchas, promover hidratação profunda e revitalização capilar (tratamento de alopecias).
 
         São realizadas sessões com intervalo mínimo de 21 dias. O número de sessões varia de acordo com o tipo de pele
-        e o efeito pretendido.
-      '
+        e o efeito pretendido.'
     />
     <Section
       alt='Foto da Dra. Juliana Guedes na Clínica Senhora-a-Branca'
