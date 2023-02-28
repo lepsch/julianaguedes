@@ -1,0 +1,42 @@
+.Contact .SendMessage {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #EEEEEE;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+  img {
+    max-width: 300px;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    img {
+      max-width: 600px;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+}

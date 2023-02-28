@@ -1,0 +1,77 @@
+.Contact .Form {
+  .title {
+    color: var(--theme-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 40px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  input, textarea {
+    border: none;
+    border: 1px solid var(--theme-color);
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+  }
+
+  button {
+    color: black;
+    background-color: transparent;
+    border: 2px solid var(--theme-color);
+    padding: 18px 35px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1rem;
+    transition: background-color 100ms linear;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: var(--theme-color);
+      transition: background-color 100ms linear;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    width: inherit;
+    min-width: 600px;
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+}

@@ -19,7 +19,7 @@ function Section ({
   reverse?: boolean
   text: string
 }) {
-  return <div className={classNames('Section', { reverse: !!reverse })} id={ id }>
+  return <section className={classNames('Section', { reverse: !!reverse })} id={ id }>
     <div className='info'>
       <div className='container'>
         <h2 className='name'>{ name }</h2>
@@ -32,7 +32,7 @@ function Section ({
     <div className='photo'>
       <img alt={ alt } src={ photo } />
     </div>
-  </div>
+  </section>
 }
 
 export default Section

@@ -22,25 +22,25 @@ function Procedures () {
     <Menu />
     <Cover />
     <Section
-      alt='Foto antes e depois de um paciente com o procedimento de toxina botulínica por Dra. Juliana Guedes'
-      id='toxina-botulinica'
-      name='Toxina Botulínica'
-      photo={ botox }
-      reverse
-      text='A Toxina Botulínica é uma substância indicada para suavizar as rugas e linhas de expressão do rosto. A
-        toxina funciona como um bloqueador da transmissão neuromuscular, impedindo a transmissão de estímulos dos
-        neurônios para os músculos, de forma que diminua a contração muscular e assim atenue as rugas e linhas de
-        expressão. Seu efeito dura, em média, 120 dias após aplicação.'
-    />
-    <Section
       alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurônico'
       id='acido-hialuronico'
       name='Ácido Hialurônico'
       photo={ acidohialuronico }
+      reverse
       text='O ácido hialurônico é uma substancia biocompatível em formato de gel. É utilizado amplamente para preencher
         rugas e sulcos, corrigir pequenas assimetrias e imperfeições e restabelecer o volume perdido no processo de
         envelhecimento. Além disso tem a capacidade de melhorar o contorno facial e dar volume a estruturas como lábios
         e glúteos, dentre outras.'
+    />
+    <Section
+      alt='Foto antes e depois de um paciente com o procedimento de toxina botulínica por Dra. Juliana Guedes'
+      id='toxina-botulinica'
+      name='Toxina Botulínica'
+      photo={ botox }
+      text='A Toxina Botulínica é uma substância indicada para suavizar as rugas e linhas de expressão do rosto. A
+        toxina funciona como um bloqueador da transmissão neuromuscular, impedindo a transmissão de estímulos dos
+        neurônios para os músculos, de forma que diminua a contração muscular e assim atenue as rugas e linhas de
+        expressão. Seu efeito dura, em média, 120 dias após aplicação.'
     />
     <Section
       alt='Foto de uma paciente com o procedimento de Fios de PDO aplicados na face pela Dra. Juliana Guedes'
