@@ -11,12 +11,17 @@ import Home from './pages/Home'
 import reportWebVitals from './reportWebVitals'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Procedures from './pages/Procedures'
 import './index.scss'
 
 const router = createBrowserRouter([
   {
     element: <Home />,
     path: '/',
+  },
+  {
+    element: <Procedures />,
+    path: '/tratamentos',
   },
   {
     element: <About />,

@@ -35,6 +35,7 @@ function Menu () {
     </div>
     <ul className={classnames('menu-content', { open: menuOpen })}>
       <li className='menu-item'><Link to='/'>Início</Link></li>
+      <li className='menu-item'><Link to='/tratamentos'>Tratamentos</Link></li>
       <li className='menu-item'><Link to='/sobre'>Sobre</Link></li>
       <li className='menu-item'><Link to='/contacto'>Contacto</Link></li>
     </ul>
