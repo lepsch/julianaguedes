@@ -62,5 +62,10 @@
       "--disable-setuid-sandbox",
       "--disable-gpu"
     ]
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "react-scroll-parallax@3.3.2": "patches/react-scroll-parallax@3.3.2.patch"
+    }
   }
 }
