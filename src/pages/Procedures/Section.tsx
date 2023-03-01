@@ -1,11 +1,12 @@
 import React from 'react'
 import classNames from 'classnames'
-// import Button from '../../componets/Button'
 
+import Button from '../../componets/Button'
 import './Section.scss'
 
 function Section ({
   alt,
+  href,
   id,
   name,
   photo,
@@ -13,6 +14,7 @@ function Section ({
   text,
 }: {
   alt: string
+  href?: string
   id: string
   name: string
   photo: string
@@ -24,9 +26,11 @@ function Section ({
       <div className='container'>
         <h2 className='name'>{ name }</h2>
         <p>{ text }</p>
-        {/* <Button>
-          Conheça a Doutora
-        </Button> */}
+        { href &&
+          <Button href={ href }>
+            Saiba Mais
+          </Button>
+        }
       </div>
     </div>
     <div className='photo'>
