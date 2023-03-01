@@ -50,19 +50,19 @@ function Form () {
     <form action='/sendmail.php' className='form' method='post' onSubmit={ (event) => { onSubmit(event) } }>
       <div className='form-group'>
         <label htmlFor='nome'>Nome</label>
-        <input disabled={ sending } id='nome' onInput={ onInput } ref={ nomeRef } required type='text' />
+        <input disabled={ sending } id='nome' name='nome' onInput={ onInput } ref={ nomeRef } required type='text' />
       </div>
       <div className='form-group'>
         <label htmlFor='email'>Email</label>
-        <input disabled={ sending } id='email' onInput={ onInput } ref={ emailRef } required type='email' />
+        <input disabled={ sending } id='email' name='email' onInput={ onInput } ref={ emailRef } required type='email' />
       </div>
       <div className='form-group'>
         <label htmlFor='telefone'>Telefone</label>
-        <input disabled={ sending } id='telefone' minLength={ 9 } onInput={ onInput } ref={ telefoneRef } required type='tel' />
+        <input disabled={ sending } id='telefone' minLength={ 9 } name='telefone' onInput={ onInput } ref={ telefoneRef } required type='tel' />
       </div>
       <div className='form-group'>
         <label htmlFor='mensagem'>Mensagem</label>
-        <textarea disabled={ sending } id='mensagem' onInput={ onInput } ref={ mensagemRef } required rows={ 5 } />
+        <textarea disabled={ sending } id='mensagem' name='mensagem' onInput={ onInput } ref={ mensagemRef } required rows={ 5 } />
       </div>
       <button className='button' disabled={ sending } type='submit'>Enviar</button>
     </form>
