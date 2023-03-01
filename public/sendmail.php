@@ -13,7 +13,7 @@ if ($contentType === 'application/json') {
 
 $to = $data->email;
 $subject = 'Mensagem enviada (www.julianaguedes.com)';
-$message = 'Olá. Obrigada por entrar em contato!' . "\r\n" . "\r\n" .
+$message = 'Olá. Obrigada por entrar em contacto!' . "\r\n" . "\r\n" .
     'A sua mensagem foi recebida e será respondida o mais breve possível.' . "\r\n" . "\r\n" .
     'Até logo!' . "\r\n" .
     'Dra. Juliana Guedes' . "\r\n" . "\r\n" .
@@ -29,7 +29,7 @@ $headers = 'From: "Dra. Juliana Guedes" <dra@julianaguedes.com>' . "\r\n" .
 
 mail($to, $subject, $message, $headers);
 if ($contentType !== 'application/json') {
-    header('Location: https://www.julianaguedes.com/contacto', true, 301);
+    header('Location: https://www.julianaguedes.com/contacto?sent=true', true, 301);
     exit;
 }
 ?>

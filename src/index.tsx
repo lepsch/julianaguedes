@@ -47,7 +47,7 @@ const CookieConsentSSR = () => {
     disableStyles
   >
     Este sítio usa cookies para fornecer alguns recursos básicos. Ao continuar
-    a navegar no sítio você concorda com o uso de cookies.
+    a navegar neste sítio você concorda com o uso de cookies.
   </CookieConsent>
 }
 
