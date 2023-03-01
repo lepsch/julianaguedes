@@ -17,7 +17,7 @@ function SelfDisplay () {
         <p>Medicina Estética - OM 70651</p>
         <p>Procedimentos - Tecnologias - Beleza - Ciência - Saúde - Estética - Lifestyle</p>
         <Button href='/sobre'>
-          Conheça a Doutora
+          Conheça a Médica
         </Button>
       </div>
     </div>
