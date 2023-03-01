@@ -22,12 +22,12 @@ function Procedures () {
     <Menu />
     <Cover />
     <Section
-      alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurônico'
+      alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurónico'
       id='acido-hialuronico'
-      name='Ácido Hialurônico'
+      name='Ácido Hialurónico'
       photo={ acidohialuronico }
       reverse
-      text='O ácido hialurônico é uma substancia biocompatível em formato de gel. É utilizado amplamente para preencher
+      text='O ácido hialurónico é uma substancia biocompatível em formato de gel. É utilizado amplamente para preencher
         rugas e sulcos, corrigir pequenas assimetrias e imperfeições e restabelecer o volume perdido no processo de
         envelhecimento. Além disso tem a capacidade de melhorar o contorno facial e dar volume a estruturas como lábios
         e glúteos, dentre outras.'
