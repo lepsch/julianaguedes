@@ -55,7 +55,7 @@ function Procedures () {
         pela flacidez da pele do pescoço.'
     />
     <Section
-      alt='Foto da Dra. Juliana Guedes com os Bioestimuladores de Colágeno'
+      alt='Foto da Dra. Juliana Guedes com os Bioestimuladores de Colagénio'
       id='bioestimuladores-de-colageno'
       name='Bioestimu&#8203;ladores de Colágeno'
       photo={ bioestimuladores }
