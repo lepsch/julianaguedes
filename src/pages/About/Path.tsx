@@ -7,7 +7,7 @@ function Path () {
     <h2 className='title'>Carreira</h2>
     <div className='text-container'>
       <div className='text'>
-        <p>Médica brasileira formada pela Universidade Federal do Rio de Janeiro - Brasil (UFRJ) (2011).</p>
+        <p>Médica formada pela Universidade Federal do Rio de Janeiro - Brasil (UFRJ) (2011).</p>
 
         <p>Especialização em Medicina de Família e Comunidade com 7 anos de atuação em Centros de Saúde da Família</p>
 

@@ -113,7 +113,7 @@ function Procedures () {
       id='consultas-medicas'
       name='Consultas Médicas'
       photo={ consultas }
-      text='Consultas médicas em Clínica Geral, consulta e tratamento de obesidade, diabetes, alterações do colesterol
+      text='Consultas médicas de clínica geral, consulta e tratamento de obesidade, diabetes, alterações do colesterol
         (dislispidemias), doenças da tireoide, alterações hormonais (Ovários poliquisticos, menopausa, andropausa),
         check up clínico, promoção de qualidade de vida e bem estar.'
     />

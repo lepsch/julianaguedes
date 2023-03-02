@@ -9,8 +9,8 @@ function Cover () {
       <ul>
         <li><a href='#acido-hialuronico'>Ácido Hialurónico</a></li>
         <li><a href='#toxina-botulinica'>Toxina Botulínica</a></li>
-        <li><a href='#fios-de-pdo'>Fios de PDO</a></li>
         <li><a href='#bioestimuladores-de-colageno'>Bioestimuladores de Colagénio</a></li>
+        <li><a href='#fios-de-pdo'>Fios de PDO</a></li>
         <li><a href='#pronokal'>PronoKal®</a></li>
         <li><a href='#peeling-quimico'>Peeling Químico</a></li>
         <li><a href='#microneedling'>Microneedling</a></li>

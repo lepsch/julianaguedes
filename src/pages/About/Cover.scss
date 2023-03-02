@@ -17,10 +17,11 @@
   }
 
   .title {
-    font-size: 50px;
+    font-size: 36px;
     font-weight: normal;
     color: white;
     text-align: center;
+    margin-top: 140px;
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -32,6 +33,10 @@
   @media only screen and (min-width: 768px) {
     width: 100vw;
     height: 100vh;
+    .title {
+      font-size: 50px;
+      margin-top: 180px;
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */

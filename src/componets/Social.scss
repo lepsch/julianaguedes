@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  height: 35vh;
 
   &:before {
     content: '';
@@ -43,7 +43,7 @@
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    height: 45vh;
+    height: 55vh;
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
