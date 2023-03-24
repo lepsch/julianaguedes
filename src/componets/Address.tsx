@@ -17,13 +17,13 @@ const Address: React.FC<{
       <p>Telefone: <a href='tel:+351253216268' rel="noreferrer" target="_blank">(+351) 253 216 268</a></p>
       <p>WhatsApp: <a href='https://wa.me/351910160557' rel="noreferrer" target="_blank">(+351) 910 160 557</a></p>
     </div>
-    <div>
+    {/* <div>
       { second }
       <h3 className='locale'>Bambuse - Braga</h3>
       <p>Rua do Raio, 339</p>
       <p>Telefone: <a href='tel:+351253173160' rel="noreferrer" target="_blank">(+351) 253 173 160</a></p>
       <p>WhatsApp: <a href='https://wa.me/351910160557' rel="noreferrer" target="_blank">(+351) 910 160 557</a></p>
-    </div>
+    </div> */}
   </div>
 }
 

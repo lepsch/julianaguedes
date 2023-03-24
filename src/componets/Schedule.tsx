@@ -7,7 +7,7 @@ import './Schedule.scss'
 function Schedule () {
   return <div className='Schedule'>
     <div className='text'>
-      <p>Ajudo-o(a) a encontrar a sua melhor versão!</p>
+      <p>Por uma beleza elegante e natural</p>
       <Button href='/contacto' theme={ ButtonTheme.dark }>Agenda sua consulta</Button>
     </div>
     <img alt='Dra. Juliana Guedes na Clínica Senhora-a-Branca' src={ suaMelhorVersao } />
