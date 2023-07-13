@@ -24,6 +24,32 @@
     max-width: 600px;
   }
 
+  .form-captcha {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-captcha input {
+    margin-top: 4px;
+  }
+
+  .form-captcha .captcha-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .form-captcha .captcha-container button {
+    padding: 10px;
+    font-size: x-large;
+  }
+
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+
   input, textarea {
     border: none;
     border: 1px solid var(--theme-color);

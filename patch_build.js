@@ -3,6 +3,9 @@ const path = require('path')
 const { glob } = require('glob')
 
 const PHP = `<?php
+session_set_cookie_params(["SameSite" => "Strict"]);
+session_start();
+
 $host = $_SERVER['HTTP_HOST'];
 if (substr($host, 0, 4) !== 'www.') {
   $host = 'www.' . $host;

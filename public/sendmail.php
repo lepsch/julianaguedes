@@ -1,14 +1,13 @@
 <?php
-$contentType =  $_SERVER["CONTENT_TYPE"];
-if ($contentType === 'application/json') {
-    $json = file_get_contents('php://input');
-    $data = json_decode($json);
-} else {
-    $data = new stdClass();
-    $data->nome = $_POST["nome"];
-    $data->email = $_POST["email"];
-    $data->telefone = $_POST["telefone"];
-    $data->mensagem = $_POST["mensagem"];
+include_once $_SERVER['DOCUMENT_ROOT'] . '/securimage/securimage.php';
+
+$json = file_get_contents('php://input');
+$data = json_decode($json);
+
+$securimage = new Securimage();
+if ($securimage->check($data->captcha) == false) {
+    http_response_code(403);
+    exit;
 }
 
 $to = $data->email;
@@ -28,8 +27,5 @@ $headers = 'From: "Dra. Juliana Guedes" <dra@julianaguedes.com>' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
-if ($contentType !== 'application/json') {
-    header('Location: https://www.julianaguedes.com/contacto?sent=true', true, 301);
-    exit;
-}
+http_response_code(200);
 ?>
