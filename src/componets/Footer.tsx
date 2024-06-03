@@ -17,7 +17,7 @@ function Footer () {
     </div>
     <Address />
     <div className='copyright'>
-      <p>© 2023 Juliana Guedes</p>
+      <p>© 2024 Juliana Guedes</p>
     </div>
   </div>
 }
