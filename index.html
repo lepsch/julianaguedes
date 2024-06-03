@@ -2,7 +2,7 @@
 <html lang="pt">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#AA5050" />
     <meta
@@ -35,17 +35,17 @@
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     <title>Dra. Juliana Guedes - Medicina Estética - Braga</title>
     <script>
       var tarteaucitronCustomText = {
         alertBigPrivacy: "Este sítio usa cookies para fornecer alguns recursos básicos. Ao continuar a navegar neste sítio você concorda com o uso de cookies."
       }
-      var tarteaucitronForceCDN = "%PUBLIC_URL%/tarteaucitronjs/"
+      var tarteaucitronForceCDN = "/tarteaucitronjs/"
     </script>
 
-    <script src="%PUBLIC_URL%/tarteaucitronjs/tarteaucitron.js"></script>
+    <script src="/tarteaucitronjs/tarteaucitron.js"></script>
     <script>
       navigator.userAgent !== 'ReactSnap' && tarteaucitron.init({
           "privacyUrl": "", /* Privacy policy url */
@@ -103,5 +103,6 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

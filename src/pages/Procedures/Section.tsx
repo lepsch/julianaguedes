@@ -1,10 +1,9 @@
-import React from 'react'
-import classNames from 'classnames'
+import classnames from 'classnames'
 
 import Button from '../../componets/Button'
 import './Section.scss'
 
-function Section ({
+function Section({
   alt,
   href,
   id,
@@ -21,22 +20,20 @@ function Section ({
   reverse?: boolean
   text: string
 }) {
-  return <section className={classNames('Section', { reverse: !!reverse })} id={ id }>
-    <div className='info'>
-      <div className='container'>
-        <h2 className='name'>{ name }</h2>
-        <p>{ text }</p>
-        { href &&
-          <Button href={ href }>
-            Saiba Mais
-          </Button>
-        }
+  return (
+    <section className={classnames('Section', { reverse: !!reverse })} id={id}>
+      <div className='info'>
+        <div className='container'>
+          <h2 className='name'>{name}</h2>
+          <p>{text}</p>
+          {href && <Button href={href}>Saiba Mais</Button>}
+        </div>
       </div>
-    </div>
-    <div className='photo'>
-      <img alt={ alt } src={ photo } />
-    </div>
-  </section>
+      <div className='photo'>
+        <img alt={alt} src={photo} />
+      </div>
+    </section>
+  )
 }
 
 export default Section

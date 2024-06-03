@@ -1,3 +1,5 @@
+/* eslint-disable no-undef, @typescript-eslint/no-var-requires */
+// @ts-check
 const fs = require('fs/promises')
 const path = require('path')
 const { glob } = require('glob')

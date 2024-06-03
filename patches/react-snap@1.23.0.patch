@@ -1,0 +1,33 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+deleted file mode 100644
+index c4bfea2aba3f59155e6cdae994293d076a440432..0000000000000000000000000000000000000000
+diff --git a/src/puppeteer_utils.js b/src/puppeteer_utils.js
+index c4b76417dcbff1a45084f268e7fb39453f0770bd..f8b72ab1590f092c69b9b1cf633dfddb6fd75982 100644
+--- a/src/puppeteer_utils.js
++++ b/src/puppeteer_utils.js
+@@ -211,7 +211,7 @@ const crawl = async opt => {
+     if (!shuttingDown && !skipExistingFile) {
+       try {
+         const page = await browser.newPage();
+-        await page._client.send("ServiceWorker.disable");
++        // await page._client.send("ServiceWorker.disable");
+         await page.setCacheEnabled(options.puppeteer.cache);
+         if (options.viewport) await page.setViewport(options.viewport);
+         if (options.skipThirdPartyRequests)
+diff --git a/src/tracker.js b/src/tracker.js
+index 6f813f40267b84c3e5cc96c505dedca831a2976b..afd9b537339d940588aeedd8236635a9209d8309 100644
+--- a/src/tracker.js
++++ b/src/tracker.js
+@@ -15,9 +15,9 @@ const createTracker = page => {
+   return {
+     urls: () => Array.from(requests).map(r => r.url()),
+     dispose: () => {
+-      page.removeListener("request", onStarted);
+-      page.removeListener("requestfinished", onFinished);
+-      page.removeListener("requestfailed", onFinished);
++      page.off("request", onStarted);
++      page.off("requestfinished", onFinished);
++      page.off("requestfailed", onFinished);
+     }
+   };
+ };

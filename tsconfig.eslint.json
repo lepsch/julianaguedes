@@ -1,10 +1,15 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "allowJs": true,
+    "checkJs": true,
+  },
   "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "./tests/**/*.ts",
-    "*.ts",
-    ".eslintrc.js",
+    "global.d.ts",
+    "eslint.config.js",
+    "patch_build.cjs",
+    "vite.config.ts",
+    "src"
   ]
 }
