@@ -11,6 +11,7 @@ module.exports = {
     'out',
     'dist',
     '**/*.d.ts',
+    '/public/tarteaucitronjs',
   ],
   parserOptions: {
     project: path.join(__dirname, 'tsconfig.eslint.json'),
