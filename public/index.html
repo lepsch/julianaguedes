@@ -42,12 +42,12 @@
       var tarteaucitronCustomText = {
         alertBigPrivacy: "Este sítio usa cookies para fornecer alguns recursos básicos. Ao continuar a navegar neste sítio você concorda com o uso de cookies."
       }
-      var tarteaucitronForceCDN = "/"
+      var tarteaucitronForceCDN = "%PUBLIC_URL%/tarteaucitronjs/"
     </script>
 
     <script src="%PUBLIC_URL%/tarteaucitronjs/tarteaucitron.js"></script>
     <script>
-      tarteaucitron.init({
+      navigator.userAgent !== 'ReactSnap' && tarteaucitron.init({
           "privacyUrl": "", /* Privacy policy url */
           "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
 
@@ -98,19 +98,8 @@
 
     <script type="text/javascript">
       tarteaucitron.user.gtagUa = 'G-1LG79LDQTT';
-      // tarteaucitron.user.gtagCrossdomain = ['example.com', 'example2.com'];
-      // tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
       (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
     </script>
-
-    <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LG79LDQTT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-1LG79LDQTT');
-    </script> -->
   </head>
   <body>
     <div id="root"></div>
