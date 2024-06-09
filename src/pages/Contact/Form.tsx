@@ -59,7 +59,7 @@ function Form() {
   return (
     <div className='Form'>
       <h1 className='title'>Envia uma mensagem</h1>
-      {/* eslint-disable-next-line @typescript-eslint/no-floating-promises */}
+      {/* eslint-disable-next-line @typescript-eslint/no-floating-promises -- Fire and forget */}
       <form className='form' method='post' onSubmit={(event) => { onSubmit(event) }}>
         <div className='form-group'>
           <label htmlFor='nome'>Nome</label>

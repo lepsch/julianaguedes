@@ -22,7 +22,8 @@ function Home() {
         photo={tratamentos}
         reverse
         text='Ácido Hialurónico - Toxina Botulínica - Fios de PDO - Bioestimuladores
-        de Colágeno - PronoKal® - Peeling Químico - Microneedling - Consultas Médicas - Mesoterapia'
+        de Colagénio - Dieta Cetogênica (PronoKal® / Proteifine®) - Peeling
+        Químico - Microneedling - Consultas Médicas - Mesoterapia'
       />
       <Social />
       <Schedule />

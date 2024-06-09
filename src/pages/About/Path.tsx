@@ -21,7 +21,7 @@ function Path() {
 
           <p>Pós-graduada em Medicina Estética pela Universidad de Alcalá de Henares - ES</p>
 
-          <p>Mestranda em Medicina Estética e Longevidade pela Universidad de Alcalá de Henares - ES</p>
+          <p>Mestra em Medicina Estética e Longevidade pela Universidad de Alcalá de Henares - ES</p>
         </div>
       </div>
 
