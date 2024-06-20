@@ -18,7 +18,10 @@ if (substr($host, 0, 4) !== 'www.') {
 `
 
 const main = async () => {
-  const result = await glob(path.join(__dirname, 'build', '**', 'index.html'))
+  const result = await glob(
+    path.join(__dirname, 'build', '**', 'index.html'),
+    { ignore: ['**/securimage/**', '**/tarteaucitronjs/**'] },
+  )
   for (const file of result) {
     console.log('Patching file', file)
     /** @type {string} */
