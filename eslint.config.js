@@ -1,10 +1,10 @@
-// @ts-check
 import * as path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import globals from 'globals'
 import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
-import react from 'eslint-plugin-react/configs/jsx-runtime.js'
+import reactRecommended from 'eslint-plugin-react/configs/recommended.js'
+import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { FlatCompat } from '@eslint/eslintrc'
 import stylistic from '@stylistic/eslint-plugin'
@@ -16,14 +16,15 @@ const compat = new FlatCompat({
   resolvePluginsRelativeTo: __dirname,
 })
 
-export default [
+export default tseslint.config(
   { languageOptions: { globals: globals.browser } },
 
   eslint.configs.recommended,
 
   ...tseslint.configs.recommendedTypeChecked,
 
-  react,
+  reactRecommended,
+  reactJsxRuntime,
   {
     settings: {
       react: {
@@ -69,14 +70,13 @@ export default [
 
   // Ignore common output dirs
   {
-    ignores: ['dist/', 'build/'],
+    ignores: ['dist/', 'build/', 'public/'],
   },
 
   {
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.eslint.json'],
-        tsconfigRootDir: __dirname,
+        EXPERIMENTAL_useProjectService: true,
       },
     },
   },
@@ -89,4 +89,20 @@ export default [
       '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     },
   },
-]
+
+  {
+    rules: {
+      '@typescript-eslint/consistent-type-exports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/require-array-sort-compare': 'error',
+      '@typescript-eslint/switch-exhaustiveness-check': 'error',
+      '@typescript-eslint/method-signature-style': 'error',
+      '@typescript-eslint/no-unnecessary-qualifier': 'error',
+      '@typescript-eslint/no-unsafe-unary-minus': 'error',
+      '@typescript-eslint/prefer-find': 'error',
+      '@typescript-eslint/prefer-for-of': 'error',
+      '@typescript-eslint/prefer-readonly': 'error',
+      '@typescript-eslint/promise-function-async': 'error',
+    },
+  },
+)

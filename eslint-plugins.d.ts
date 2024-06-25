@@ -1,3 +1,9 @@
+declare module 'eslint-plugin-react/configs/recommended.js' {
+  import { type Linter } from 'eslint'
+  const config: Linter.FlatConfig
+  export = config
+}
+
 declare module 'eslint-plugin-react/configs/jsx-runtime.js' {
   import { type Linter } from 'eslint'
   const config: Linter.FlatConfig

@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@remix-run/router": "^1.17.0",
     "axios": "^1.7.2",
     "classnames": "^2.5.1",
     "normalize.css": "^8.0.1",
+    "parallax-controller": "^1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
@@ -48,8 +50,8 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p clean typecheck && vite build",
-    "clean": "rimraf build",
-    "typecheck": "tsc --noEmit",
+    "clean": "rimraf build dist",
+    "typecheck": "tsc -b",
     "postbuild": "npm-run-all -p build-clean 'prettier:*' -s snap patch-snap",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "snap": "react-snap",

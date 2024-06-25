@@ -1,11 +1,13 @@
 {
-  "extends": [
-    "./tsconfig.base.json",
-    "@tsconfig/node20/tsconfig.json"
-  ],
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
+    "outDir": "dist/node",
     "types": ["node"]
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "eslint-plugins.d.ts",
+    "eslint.config.js",
+    "patch_build.cjs",
+    "vite.config.ts"
+  ]
 }

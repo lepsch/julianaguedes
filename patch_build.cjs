@@ -1,7 +1,6 @@
 /* eslint-disable no-undef, @typescript-eslint/no-var-requires */
-// @ts-check
-const fs = require('fs/promises')
-const path = require('path')
+const fs = require('node:fs/promises')
+const path = require('node:path')
 const { glob } = require('glob')
 
 const PHP = `<?php

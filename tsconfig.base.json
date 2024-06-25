@@ -1,19 +1,51 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
-
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "composite": true,
+    "target": "ESNext",
+    "lib": [
+        "ESNext"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
+    "allowJs": true,
+    "checkJs": true,
+
+    "moduleDetection": "force",
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
+    "isolatedModules": true,
     "jsx": "react-jsx",
-    "types": [],
+    "declarationMap": true,
+    "preserveSymlinks": true,
+    "useDefineForClassFields": true,
+    "downlevelIteration": true,
+    "emitDeclarationOnly": true,
 
-    "noErrorTruncation": true
+    "verbatimModuleSyntax": true,
+
+    /* Linting */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "noErrorTruncation": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
   },
 }

@@ -19,6 +19,9 @@ importers:
 
   .:
     dependencies:
+      '@remix-run/router':
+        specifier: ^1.17.0
+        version: 1.17.0
       axios:
         specifier: ^1.7.2
         version: 1.7.2
@@ -28,6 +31,9 @@ importers:
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
+      parallax-controller:
+        specifier: ^1.7.1
+        version: 1.7.1
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -456,6 +462,10 @@ packages:
 
   '@remix-run/router@1.16.1':
     resolution: {integrity: sha512-es2g3dq6Nb07iFxGk5GuHN20RwBZOsuDQN7izWIisUcv9r+d2C5jQxqmgkdebXgReWfiyUabcki6Fg77mSNrig==}
+    engines: {node: '>=14.0.0'}
+
+  '@remix-run/router@1.17.0':
+    resolution: {integrity: sha512-2D6XaHEVvkCn682XBnipbJjgZUU7xjLtA4dGJRBVUKpEaDYOZMENZoZjAOSb7qirxt5RupjzZxz4fK2FO+EFPw==}
     engines: {node: '>=14.0.0'}
 
   '@rollup/pluginutils@4.2.1':
@@ -3258,6 +3268,8 @@ snapshots:
       - supports-color
 
   '@remix-run/router@1.16.1': {}
+
+  '@remix-run/router@1.17.0': {}
 
   '@rollup/pluginutils@4.2.1':
     dependencies:
