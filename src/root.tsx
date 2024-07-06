@@ -1,14 +1,17 @@
 import { Helmet } from 'react-helmet'
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, useMatches, type UIMatch } from 'react-router-dom'
 
 const Root = () => {
-  const { pathname } = useLocation()
+  const matches = useMatches()
+  const match = matches[matches.length - 1] as UIMatch<unknown, { canonicalPath: string }> | undefined
+  const canonicalPath = match?.handle?.canonicalPath ?? '/'
+
   return (
     <>
       <Helmet defer={false}>
         <link
           rel='canonical'
-          href={`https://www.julianaguedes.com${pathname}`}
+          href={`https://www.julianaguedes.com${canonicalPath}`}
         />
       </Helmet>
       <Outlet />
