@@ -1,8 +1,8 @@
-import Button from './Button'
+import { Button } from './Button'
 import suaMelhorVersao from '../assets/dra-juliana-guedes-sua-melhor-versao.jpg'
 import './Schedule.scss'
 
-function Schedule() {
+export function Schedule() {
   return (
     <div className='Schedule'>
       <div className='text'>
@@ -13,5 +13,3 @@ function Schedule() {
     </div>
   )
 }
-
-export default Schedule

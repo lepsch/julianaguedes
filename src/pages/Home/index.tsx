@@ -1,17 +1,13 @@
-import Menu from '../../componets/Menu'
-import Footer from '../../componets/Footer'
-import SelfDisplay from './SelfDisplay'
-import Social from '../../componets/Social'
-import Schedule from '../../componets/Schedule'
-import Cover from './Cover'
-import Section from '../Procedures/Section'
+import { Page, Social, Schedule } from '../../componets'
+import { Cover } from './Cover'
+import { Section } from '../Procedures/Section'
+import { SelfDisplay } from './SelfDisplay'
 import tratamentos from '../../assets/dra-juliana-guedes-tratamentos-collage.jpg'
 import './index.scss'
 
 function Home() {
   return (
-    <main className='Home'>
-      <Menu />
+    <Page className='Home'>
       <Cover />
       <SelfDisplay />
       <Section
@@ -27,8 +23,7 @@ function Home() {
       />
       <Social />
       <Schedule />
-      <Footer />
-    </main>
+    </Page>
   )
 }
 

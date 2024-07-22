@@ -6,7 +6,7 @@ import Bars from '../assets/bars-solid.svg'
 import Xmark from '../assets/xmark-solid.svg'
 import './Menu.scss'
 
-function Menu() {
+export function Menu() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -49,5 +49,3 @@ function Menu() {
     </div>
   )
 }
-
-export default Menu

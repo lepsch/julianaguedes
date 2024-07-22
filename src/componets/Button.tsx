@@ -7,7 +7,7 @@ enum ButtonTheme {
   dark = 'dark',
 }
 
-const Button = ({
+export const Button = ({
   children,
   href,
   theme = ButtonTheme.light,
@@ -24,5 +24,3 @@ const Button = ({
 }
 
 Button.Theme = ButtonTheme
-
-export default Button

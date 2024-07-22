@@ -1,6 +1,6 @@
 import './Cover.scss'
 
-function Cover() {
+export function Cover() {
   return (
     <div className='Cover'>
       <div className='title-container'>
@@ -20,5 +20,3 @@ function Cover() {
     </div>
   )
 }
-
-export default Cover

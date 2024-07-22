@@ -1,6 +1,6 @@
 import './Path.scss'
 
-function Path() {
+export function Path() {
   return (
     <div className='Path'>
       <h2 className='title'>Carreira</h2>
@@ -28,5 +28,3 @@ function Path() {
     </div>
   )
 }
-
-export default Path

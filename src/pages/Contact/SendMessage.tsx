@@ -1,9 +1,9 @@
-import Form from './Form'
+import { Form } from './Form'
 import consultas from '../../assets/dra-juliana-guedes-consultas-medicas.jpg'
 
 import './SendMessage.scss'
 
-function SendMessage() {
+export function SendMessage() {
   return (
     <div className='SendMessage'>
       <img alt='Dra. Juliana Guedes - Consultas Médicas' src={consultas} />
@@ -11,5 +11,3 @@ function SendMessage() {
     </div>
   )
 }
-
-export default SendMessage

@@ -3,7 +3,7 @@ import axios, { AxiosError, HttpStatusCode } from 'axios'
 
 import './Form.scss'
 
-function Form() {
+export function Form() {
   const [sending, setSending] = React.useState(false)
   const [error, setError] = React.useState('')
   const nomeRef = React.useRef<HTMLInputElement>(null)
@@ -99,5 +99,3 @@ function Form() {
     </div>
   )
 }
-
-export default Form

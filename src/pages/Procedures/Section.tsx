@@ -1,9 +1,9 @@
 import classnames from 'classnames'
 
-import Button from '../../componets/Button'
+import { Button } from '../../componets'
 import './Section.scss'
 
-function Section({
+export function Section({
   alt,
   href,
   id,
@@ -35,5 +35,3 @@ function Section({
     </section>
   )
 }
-
-export default Section

@@ -1,7 +1,7 @@
 import Instagram from '../assets/Instagram.svg'
 import './Social.scss'
 
-function Social() {
+export function Social() {
   return (
     <div className='Social'>
       <Instagram />
@@ -9,5 +9,3 @@ function Social() {
     </div>
   )
 }
-
-export default Social

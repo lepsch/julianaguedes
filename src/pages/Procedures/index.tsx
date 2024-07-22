@@ -1,9 +1,6 @@
-import Menu from '../../componets/Menu'
-import Footer from '../../componets/Footer'
-import Social from '../../componets/Social'
-import Schedule from '../../componets/Schedule'
-import Cover from './Cover'
-import Section from './Section'
+import { Page, Social, Schedule } from '../../componets'
+import { Cover } from './Cover'
+import { Section } from './Section'
 import botox from '../../assets/dra-juliana-guedes-botox.jpg'
 import acidohialuronico from '../../assets/dra-juliana-guedes-acido-hialuronico.jpg'
 import fios from '../../assets/dra-juliana-guedes-fios-de-pdo.jpg'
@@ -17,8 +14,7 @@ import './index.scss'
 
 function Procedures() {
   return (
-    <main className='Procedures'>
-      <Menu />
+    <Page className='Procedures'>
       <Cover />
       <Section
         alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurónico'
@@ -136,8 +132,7 @@ function Procedures() {
       />
       <Social />
       <Schedule />
-      <Footer />
-    </main>
+    </Page>
   )
 }
 

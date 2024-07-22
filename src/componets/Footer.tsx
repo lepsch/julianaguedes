@@ -1,10 +1,10 @@
+import { Address } from './Address'
 import Instagram from '../assets/Instagram.svg'
 import Facebook from '../assets/Facebook.svg'
 import Whatsapp from '../assets/Whatsapp.svg'
-import Address from './Address'
 import './Footer.scss'
 
-function Footer() {
+export function Footer() {
   return (
     <div className='Footer'>
       <p className='name'>Juliana Guedes</p>
@@ -21,5 +21,3 @@ function Footer() {
     </div>
   )
 }
-
-export default Footer

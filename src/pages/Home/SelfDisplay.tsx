@@ -1,10 +1,10 @@
 import { useParallax } from 'react-scroll-parallax'
 
+import { Button } from '../../componets/Button'
 import photo from '../../assets/dra-juliana-guedes-photo.jpg'
-import Button from '../../componets/Button'
 import './SelfDisplay.scss'
 
-function SelfDisplay() {
+export function SelfDisplay() {
   const parallax = useParallax<HTMLImageElement>({
     speed: 10,
   })
@@ -27,5 +27,3 @@ function SelfDisplay() {
     </div>
   )
 }
-
-export default SelfDisplay

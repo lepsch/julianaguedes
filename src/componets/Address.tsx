@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Address.scss'
 
-const Address: React.FC<{
+export const Address: React.FC<{
   first?: React.ReactNode
   second?: React.ReactNode
 }> = ({
@@ -29,5 +29,3 @@ const Address: React.FC<{
     </div>
   )
 }
-
-export default Address
