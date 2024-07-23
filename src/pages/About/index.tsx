@@ -5,8 +5,7 @@ import styles from './index.module.scss'
 
 function About() {
   return (
-    <Page className={styles['About']}>
-      <Cover />
+    <Page className={styles['About']} header={<Cover />}>
       <Path />
       <WorkPlaces />
     </Page>

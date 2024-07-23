@@ -5,8 +5,7 @@ import styles from './index.module.scss'
 
 function Contact() {
   return (
-    <Page className={styles['Contact']} hideSchedule>
-      <Cover />
+    <Page className={styles['Contact']} hideSchedule header={<Cover />}>
       <SendMessage />
       <WorkPlaces />
     </Page>

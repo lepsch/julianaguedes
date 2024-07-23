@@ -14,8 +14,7 @@ import styles from './index.module.scss'
 
 function Procedures() {
   return (
-    <Page className={styles['Procedures']}>
-      <Cover />
+    <Page className={styles['Procedures']} header={<Cover />}>
       <Section
         alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurónico'
         id='acido-hialuronico'

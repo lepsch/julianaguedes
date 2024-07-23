@@ -7,8 +7,7 @@ import styles from './index.module.scss'
 
 function Home() {
   return (
-    <Page className={styles['Home']}>
-      <Cover />
+    <Page className={styles['Home']} header={<Cover />}>
       <SelfDisplay />
       <Section
         alt='Colagem de fotos de tratamentos e Dra. Juliana Guedes'
