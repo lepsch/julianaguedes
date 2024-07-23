@@ -2,8 +2,8 @@ import './Path.scss'
 
 export function Path() {
   return (
-    <div className='Path'>
-      <h2 className='title'>Carreira</h2>
+    <article className='Path' aria-labelledby='path-title'>
+      <h2 id='path-title' className='title'>Carreira</h2>
       <div className='text-container'>
         <div className='text'>
           <p>Médica formada pela Universidade Federal do Rio de Janeiro - Brasil (UFRJ) (2011).</p>
@@ -25,6 +25,6 @@ export function Path() {
         </div>
       </div>
 
-    </div>
+    </article>
   )
 }

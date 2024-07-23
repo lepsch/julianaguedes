@@ -5,9 +5,9 @@ import './SendMessage.scss'
 
 export function SendMessage() {
   return (
-    <div className='SendMessage'>
+    <section className='SendMessage'>
       <img alt='Dra. Juliana Guedes - Consultas Médicas' src={consultas} />
       <Form />
-    </div>
+    </section>
   )
 }

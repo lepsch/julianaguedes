@@ -5,14 +5,15 @@ import './WorkPlaces.scss'
 
 export function WorkPlaces() {
   return (
-    <div className='WorkPlaces'>
-      <h2 className='title'>Locais de atendimento</h2>
+    <section className='WorkPlaces' aria-labelledby='workplaces-title'>
+      <h2 id='workplaces-title' className='title'>Locais de atendimento</h2>
       <div className='address-container'>
         <Address
+          id='workplaces'
           first={<img alt='Clínica Senhora a Branca' src={senhoraABranca} />}
           second={<img alt='Clínica RJ' src={rj} />}
         />
       </div>
-    </div>
+    </section>
   )
 }

@@ -2,7 +2,7 @@ import './Cover.scss'
 
 export function Cover() {
   return (
-    <div className='Cover'>
+    <header className='Cover'>
       <div className='title-container'>
         <h1 className='title'>Tratamentos</h1>
         <ul>
@@ -17,6 +17,6 @@ export function Cover() {
           <li><a href='#mesoterapia'>Mesoterapia</a></li>
         </ul>
       </div>
-    </div>
+    </header>
   )
 }

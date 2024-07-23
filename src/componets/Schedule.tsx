@@ -4,12 +4,12 @@ import './Schedule.scss'
 
 export function Schedule() {
   return (
-    <div className='Schedule'>
+    <section className='Schedule' aria-label='Agenda sua consulta'>
       <div className='text'>
         <p>Por uma beleza elegante e natural</p>
         <Button href='/contacto' theme={Button.Theme.dark}>Agenda sua consulta</Button>
       </div>
       <img alt='Dra. Juliana Guedes na Clínica Senhora-a-Branca' src={suaMelhorVersao} />
-    </div>
+    </section>
   )
 }

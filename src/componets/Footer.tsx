@@ -6,18 +6,39 @@ import './Footer.scss'
 
 export function Footer() {
   return (
-    <div className='Footer'>
+    <footer className='Footer'>
       <p className='name'>Juliana Guedes</p>
       <p className='title'>Medicina Estética</p>
-      <div className='social'>
-        <a href='https://www.instagram.com/drajulianaguedes/' rel='noreferrer' target='_blank'><Instagram /></a>
-        <a href='https://www.facebook.com/drajulianaguedes/' rel='noreferrer' target='_blank'><Facebook /></a>
-        <a href='https://wa.me/351910160557' rel='noreferrer' target='_blank'><Whatsapp /></a>
+      <div className='social' aria-label='Social links'>
+        <a
+          aria-label='Perfil do Instagram'
+          href='https://www.instagram.com/drajulianaguedes/'
+          rel='noreferrer'
+          target='_blank'
+        >
+          <Instagram role='presentation' />
+        </a>
+        <a
+          aria-label='Perfil do Facebook'
+          href='https://www.facebook.com/drajulianaguedes/'
+          rel='noreferrer'
+          target='_blank'
+        >
+          <Facebook role='presentation' />
+        </a>
+        <a
+          aria-label='Contato Whatsapp'
+          href='https://wa.me/351910160557'
+          rel='noreferrer'
+          target='_blank'
+        >
+          <Whatsapp role='presentation' />
+        </a>
       </div>
-      <Address />
+      <Address id='footer' />
       <div className='copyright'>
-        <p>© 2024 Juliana Guedes</p>
+        <p>© 2022-2024 Juliana Guedes</p>
       </div>
-    </div>
+    </footer>
   )
 }

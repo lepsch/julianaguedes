@@ -19,33 +19,39 @@ export function Menu() {
   })
 
   return (
-    <div className='Menu'>
+    <nav className='Menu'>
       <div className='menu-mobile-icon'>
         <div className={classnames('icon', { hidden: menuOpen })}>
-          <button onClick={(e) => {
-            setMenuOpen(true)
-            e.stopPropagation()
-          }}
+          <button
+            onClick={(e) => {
+              setMenuOpen(true)
+              e.stopPropagation()
+            }}
+            aria-label='Abrir Menu'
+            aria-hidden={menuOpen}
           >
-            <Bars />
+            <Bars role='presentation' />
           </button>
         </div>
         <div className={classnames('icon', { hidden: !menuOpen })}>
-          <button onClick={(e) => {
-            setMenuOpen(false)
-            e.stopPropagation()
-          }}
+          <button
+            onClick={(e) => {
+              setMenuOpen(false)
+              e.stopPropagation()
+            }}
+            aria-label='Fechar Menu'
+            aria-hidden={!menuOpen}
           >
-            <Xmark />
+            <Xmark role='presentation' />
           </button>
         </div>
       </div>
-      <ul className={classnames('menu-content', { open: menuOpen })}>
-        <li className='menu-item'><Link to='/'>Início</Link></li>
-        <li className='menu-item'><Link to='/tratamentos'>Tratamentos</Link></li>
-        <li className='menu-item'><Link to='/sobre'>Sobre</Link></li>
-        <li className='menu-item'><Link to='/contacto'>Contacto</Link></li>
+      <ul className={classnames('menu-content', { open: menuOpen })} role='menubar'>
+        <li className='menu-item' role='presentation'><Link role='menuitem' to='/'>Início</Link></li>
+        <li className='menu-item' role='presentation'><Link role='menuitem' to='/tratamentos'>Tratamentos</Link></li>
+        <li className='menu-item' role='presentation'><Link role='menuitem' to='/sobre'>Sobre</Link></li>
+        <li className='menu-item' role='presentation'><Link role='menuitem' to='/contacto'>Contacto</Link></li>
       </ul>
-    </div>
+    </nav>
   )
 }

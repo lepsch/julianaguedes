@@ -10,7 +10,7 @@ export function SelfDisplay() {
   })
 
   return (
-    <div className='SelfDisplay'>
+    <article className='SelfDisplay' aria-label='Apresentação'>
       <div className='info'>
         <div className='container'>
           <h2 className='name'>Dra. Juliana Guedes</h2>
@@ -24,6 +24,6 @@ export function SelfDisplay() {
       <div className='photo'>
         <img alt='Foto da Dra. Juliana Guedes' ref={parallax.ref} src={photo} />
       </div>
-    </div>
+    </article>
   )
 }
