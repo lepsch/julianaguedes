@@ -33,7 +33,7 @@ export function Menu() {
             aria-expanded={false}
             aria-controls='menu'
           >
-            <Bars role='presentation' />
+            <Bars role='none' />
           </button>
         </div>
         <div className={classnames({ hidden: !menuOpen })}>
@@ -48,15 +48,15 @@ export function Menu() {
             aria-expanded={true}
             aria-controls='menu'
           >
-            <Xmark role='presentation' />
+            <Xmark role='none' />
           </button>
         </div>
       </div>
       <ul id='menu' className={classnames(styles['menu-content'], { open: menuOpen })} role='menu'>
-        <li className={styles['menu-item']} role='presentation'><Link role='menuitem' to='/'>Início</Link></li>
-        <li className={styles['menu-item']} role='presentation'><Link role='menuitem' to='/tratamentos'>Tratamentos</Link></li>
-        <li className={styles['menu-item']} role='presentation'><Link role='menuitem' to='/sobre'>Sobre</Link></li>
-        <li className={styles['menu-item']} role='presentation'><Link role='menuitem' to='/contacto'>Contacto</Link></li>
+        <li className={styles['menu-item']} role='none'><Link role='menuitem' to='/'>Início</Link></li>
+        <li className={styles['menu-item']} role='none'><Link role='menuitem' to='/tratamentos'>Tratamentos</Link></li>
+        <li className={styles['menu-item']} role='none'><Link role='menuitem' to='/sobre'>Sobre</Link></li>
+        <li className={styles['menu-item']} role='none'><Link role='menuitem' to='/contacto'>Contacto</Link></li>
       </ul>
     </nav>
   )

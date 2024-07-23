@@ -4,7 +4,7 @@ import styles from './Social.module.scss'
 export function Social() {
   return (
     <section className={styles['Social']} aria-label='Perfil do Instagram'>
-      <Instagram role='presentation' />
+      <Instagram role='none' />
       <a href='https://www.instagram.com/drajulianaguedes/' rel='noreferrer' target='_blank'>@drajulianaguedes</a>
     </section>
   )

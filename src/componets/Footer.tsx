@@ -20,7 +20,7 @@ export function Footer({ hideSocial, hideSchedule }: { hideSocial: boolean, hide
           rel='noreferrer'
           target='_blank'
         >
-          <Instagram role='presentation' />
+          <Instagram role='none' />
         </a>
         <a
           aria-label='Perfil do Facebook'
@@ -28,7 +28,7 @@ export function Footer({ hideSocial, hideSchedule }: { hideSocial: boolean, hide
           rel='noreferrer'
           target='_blank'
         >
-          <Facebook role='presentation' />
+          <Facebook role='none' />
         </a>
         <a
           aria-label='Contato Whatsapp'
@@ -36,7 +36,7 @@ export function Footer({ hideSocial, hideSchedule }: { hideSocial: boolean, hide
           rel='noreferrer'
           target='_blank'
         >
-          <Whatsapp role='presentation' />
+          <Whatsapp role='none' />
         </a>
       </div>
       <Address id='footer' />
