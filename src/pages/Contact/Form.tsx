@@ -57,9 +57,9 @@ export function Form() {
 
   return (
     <div className={styles['Form']}>
-      <h1 className={styles['title']}>Envia uma mensagem</h1>
+      <h1 id='send-message' className={styles['title']}>Envia uma mensagem</h1>
       {/* eslint-disable-next-line @typescript-eslint/no-floating-promises -- Fire and forget */}
-      <form className={styles['form']} method='post' onSubmit={(event) => { onSubmit(event) }}>
+      <form className={styles['form']} method='post' onSubmit={(event) => { onSubmit(event) }} aria-labelledby='send-message'>
         <div className={styles['form-group']}>
           <label htmlFor='nome'>Nome</label>
           <input disabled={sending} id='nome' name='nome' onInput={onInput} ref={nomeRef} required type='text' />
