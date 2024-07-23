@@ -4,7 +4,7 @@ import styles from './SendMessage.module.scss'
 
 export function SendMessage() {
   return (
-    <section className={styles['SendMessage']}>
+    <section className={styles['SendMessage']} aria-label='Envia uma mensagem'>
       <img alt='Dra. Juliana Guedes - Consultas Médicas' src={consultas} />
       <Form />
     </section>

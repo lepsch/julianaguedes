@@ -3,8 +3,8 @@ import styles from './Cover.module.scss'
 export function Cover() {
   return (
     <header className={styles['Cover']}>
-      <div className={styles['title-container']}>
-        <h1 className={styles['title']}>Tratamentos</h1>
+      <nav className={styles['title-container']} aria-label='tratamentos-title'>
+        <h1 id='tratamentos-title' className={styles['title']}>Tratamentos</h1>
         <ul>
           <li><a href='#acido-hialuronico'>Ácido Hialurónico</a></li>
           <li><a href='#toxina-botulinica'>Toxina Botulínica</a></li>
@@ -16,7 +16,7 @@ export function Cover() {
           <li><a href='#consultas-medicas'>Consultas Médicas</a></li>
           <li><a href='#mesoterapia'>Mesoterapia</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
   )
 }
