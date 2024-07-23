@@ -1,7 +1,6 @@
 import React from 'react'
 import axios, { AxiosError, HttpStatusCode } from 'axios'
-
-import './Form.scss'
+import styles from './Form.module.scss'
 
 export function Form() {
   const [sending, setSending] = React.useState(false)
@@ -57,28 +56,28 @@ export function Form() {
   }
 
   return (
-    <div className='Form'>
-      <h1 className='title'>Envia uma mensagem</h1>
+    <div className={styles['Form']}>
+      <h1 className={styles['title']}>Envia uma mensagem</h1>
       {/* eslint-disable-next-line @typescript-eslint/no-floating-promises -- Fire and forget */}
-      <form className='form' method='post' onSubmit={(event) => { onSubmit(event) }}>
-        <div className='form-group'>
+      <form className={styles['form']} method='post' onSubmit={(event) => { onSubmit(event) }}>
+        <div className={styles['form-group']}>
           <label htmlFor='nome'>Nome</label>
           <input disabled={sending} id='nome' name='nome' onInput={onInput} ref={nomeRef} required type='text' />
         </div>
-        <div className='form-group'>
+        <div className={styles['form-group']}>
           <label htmlFor='email'>Email</label>
           <input disabled={sending} id='email' name='email' onInput={onInput} ref={emailRef} required type='email' />
         </div>
-        <div className='form-group'>
+        <div className={styles['form-group']}>
           <label htmlFor='telefone'>Telefone</label>
           <input disabled={sending} id='telefone' minLength={9} name='telefone' onInput={onInput} ref={telefoneRef} required type='tel' />
         </div>
-        <div className='form-group'>
+        <div className={styles['form-group']}>
           <label htmlFor='mensagem'>Mensagem</label>
           <textarea disabled={sending} id='mensagem' name='mensagem' onInput={onInput} ref={mensagemRef} required rows={5} />
         </div>
-        <div className='form-captcha'>
-          <div className='captcha-container'>
+        <div className={styles['form-captcha']}>
+          <div className={styles['captcha-container']}>
             <img alt='Captcha' id='captcha' ref={captchaImgRef} src='/securimage/securimage_show.php' />
             <button
               disabled={sending}
@@ -93,8 +92,8 @@ export function Form() {
           </div>
           <input disabled={sending} maxLength={6} name='captcha' ref={captchaRef} required size={10} type='text' />
         </div>
-        <button className='button' disabled={sending} type='submit'>Enviar</button>
-        {error && <p className='error'>{error}</p>}
+        <button className={styles['button']} disabled={sending} type='submit'>Enviar</button>
+        {error && <p className={styles['error']}>{error}</p>}
       </form>
     </div>
   )

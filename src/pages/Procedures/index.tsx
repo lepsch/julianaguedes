@@ -10,11 +10,11 @@ import peeling from '../../assets/dra-juliana-guedes-peeling-quimico.jpg'
 import microagulhamento from '../../assets/dra-juliana-guedes-dermapen-microagulhamento.jpg'
 import consultas from '../../assets/dra-juliana-guedes-consultas-medicas.jpg'
 import mesoterapia from '../../assets/dra-juliana-guedes-mesoterapia.jpg'
-import './index.scss'
+import styles from './index.module.scss'
 
 function Procedures() {
   return (
-    <Page className='Procedures'>
+    <Page className={styles['Procedures']}>
       <Cover />
       <Section
         alt='Foto da Dra. Juliana Guedes com uma seringa de Ácido Hialurónico'

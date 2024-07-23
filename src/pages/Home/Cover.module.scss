@@ -1,0 +1,59 @@
+.Cover {
+  width: 100vw;
+  height: 100vw;
+  background-image: url('../../assets/dra-juliana-guedes-front.jpg');
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+
+    .title {
+      font-size: 50px;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+  }
+}

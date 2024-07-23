@@ -32,11 +32,11 @@
     fill: white;
   }
 
-  .menu-content.open {
+  .menu-content:global(.open) {
     display: flex;
   }
 
-  .hidden {
+  :global(.hidden) {
     opacity: 0;
     transition: all 200ms linear;
   }

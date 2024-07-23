@@ -1,6 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
-import './Button.scss'
+import styles from './Button.module.scss'
 
 enum ButtonTheme {
   light = 'light',
@@ -17,7 +17,7 @@ export const Button = ({
   theme?: ButtonTheme
 }) => {
   return (
-    <a className={classnames('Button', theme)} href={href}>
+    <a className={classnames(styles['Button'], theme)} href={href}>
       {children}
     </a>
   )

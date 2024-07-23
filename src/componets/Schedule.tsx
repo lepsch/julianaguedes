@@ -1,11 +1,11 @@
 import { Button } from './Button'
 import suaMelhorVersao from '../assets/dra-juliana-guedes-sua-melhor-versao.jpg'
-import './Schedule.scss'
+import styles from './Schedule.module.scss'
 
 export function Schedule() {
   return (
-    <section className='Schedule' aria-label='Agenda sua consulta'>
-      <div className='text'>
+    <section className={styles['Schedule']} aria-label='Agenda sua consulta'>
+      <div className={styles['text']}>
         <p>Por uma beleza elegante e natural</p>
         <Button href='/contacto' theme={Button.Theme.dark}>Agenda sua consulta</Button>
       </div>

@@ -10,7 +10,7 @@ a.Button {
   width: 100%;
   max-width: 300px;
 
-  &.dark {
+  &:global(.dark) {
     color: white;
   }
 

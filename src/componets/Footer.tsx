@@ -2,14 +2,14 @@ import { Address } from './Address'
 import Instagram from '../assets/Instagram.svg'
 import Facebook from '../assets/Facebook.svg'
 import Whatsapp from '../assets/Whatsapp.svg'
-import './Footer.scss'
+import styles from './Footer.module.scss'
 
 export function Footer() {
   return (
-    <footer className='Footer'>
-      <p className='name'>Juliana Guedes</p>
-      <p className='title'>Medicina Estética</p>
-      <div className='social' aria-label='Social links'>
+    <footer className={styles['Footer']}>
+      <p className={styles['name']}>Juliana Guedes</p>
+      <p className={styles['title']}>Medicina Estética</p>
+      <div className={styles['social']} aria-label='Social links'>
         <a
           aria-label='Perfil do Instagram'
           href='https://www.instagram.com/drajulianaguedes/'
@@ -36,7 +36,7 @@ export function Footer() {
         </a>
       </div>
       <Address id='footer' />
-      <div className='copyright'>
+      <div className={styles['copyright']}>
         <p>© 2022-2024 Juliana Guedes</p>
       </div>
     </footer>

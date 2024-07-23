@@ -1,10 +1,10 @@
-import './Cover.scss'
+import styles from './Cover.module.scss'
 
 export function Cover() {
   return (
-    <header className='Cover'>
-      <div className='title-container'>
-        <h1 className='title'>Tratamentos</h1>
+    <header className={styles['Cover']}>
+      <div className={styles['title-container']}>
+        <h1 className={styles['title']}>Tratamentos</h1>
         <ul>
           <li><a href='#acido-hialuronico'>Ácido Hialurónico</a></li>
           <li><a href='#toxina-botulinica'>Toxina Botulínica</a></li>

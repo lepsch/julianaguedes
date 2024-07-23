@@ -3,11 +3,11 @@ import { Cover } from './Cover'
 import { Section } from '../Procedures/Section'
 import { SelfDisplay } from './SelfDisplay'
 import tratamentos from '../../assets/dra-juliana-guedes-tratamentos-collage.jpg'
-import './index.scss'
+import styles from './index.module.scss'
 
 function Home() {
   return (
-    <Page className='Home'>
+    <Page className={styles['Home']}>
       <Cover />
       <SelfDisplay />
       <Section
