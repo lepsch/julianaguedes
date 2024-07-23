@@ -1,15 +1,14 @@
-import { Page, Social, WorkPlaces } from '../../componets'
+import { Page, WorkPlaces } from '../../componets'
 import { Cover } from './Cover'
 import { SendMessage } from './SendMessage'
 import styles from './index.module.scss'
 
 function Contact() {
   return (
-    <Page className={styles['Contact']}>
+    <Page className={styles['Contact']} hideSchedule>
       <Cover />
       <SendMessage />
       <WorkPlaces />
-      <Social />
     </Page>
   )
 }

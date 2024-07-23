@@ -1,4 +1,4 @@
-import { Page, Social, Schedule } from '../../componets'
+import { Page } from '../../componets'
 import { Cover } from './Cover'
 import { Section } from './Section'
 import botox from '../../assets/dra-juliana-guedes-botox.jpg'
@@ -130,8 +130,6 @@ function Procedures() {
         As áreas geralmente tratadas são: peito, região interna dos braços, mãos, abdômen, flancos, costas, região
         interna e posterior da coxa e glúteo.'
       />
-      <Social />
-      <Schedule />
     </Page>
   )
 }

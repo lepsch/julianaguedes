@@ -1,4 +1,4 @@
-import { Page, Social, Schedule } from '../../componets'
+import { Page } from '../../componets'
 import { Cover } from './Cover'
 import { Section } from '../Procedures/Section'
 import { SelfDisplay } from './SelfDisplay'
@@ -21,8 +21,6 @@ function Home() {
         de Colagénio - Dieta Cetogênica (PronoKal® / Proteifine®) - Peeling
         Químico - Microneedling - Consultas Médicas - Mesoterapia'
       />
-      <Social />
-      <Schedule />
     </Page>
   )
 }

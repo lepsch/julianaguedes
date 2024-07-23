@@ -1,4 +1,4 @@
-import { Page, Social, Schedule, WorkPlaces } from '../../componets'
+import { Page, WorkPlaces } from '../../componets'
 import { Cover } from './Cover'
 import { Path } from './Path'
 import styles from './index.module.scss'
@@ -9,8 +9,6 @@ function About() {
       <Cover />
       <Path />
       <WorkPlaces />
-      <Social />
-      <Schedule />
     </Page>
   )
 }

@@ -1,12 +1,16 @@
 import { Address } from './Address'
+import { Schedule } from './Schedule'
+import { Social } from './Social'
 import Instagram from '../assets/Instagram.svg'
 import Facebook from '../assets/Facebook.svg'
 import Whatsapp from '../assets/Whatsapp.svg'
 import styles from './Footer.module.scss'
 
-export function Footer() {
+export function Footer({ hideSocial, hideSchedule }: { hideSocial: boolean, hideSchedule: boolean }) {
   return (
     <footer className={styles['Footer']}>
+      {!hideSocial && <Social />}
+      {!hideSchedule && <Schedule />}
       <p className={styles['name']}>Juliana Guedes</p>
       <p className={styles['title']}>Medicina Estética</p>
       <div className={styles['social']} aria-label='Social links'>
